@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  ​
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel= "stylesheet" href= './style.css'/>
+  </head>
+  ​
+  <body>
+    <header class="card card-intro blue-gradient">
+      ​
+      <div class="card-body white-text rgba-black-light text-center">
+        ​
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          ​
+          <!--Grid column-->
+          <div
+            class="col-md-6 wow fadeIn animated"
+            style="
+              visibility: visible;
+              animation-name: fadeIn;
+              animation-iteration-count: 1;
+            "
+          >
+            ​
+            <h1 class="font-weight-bold mb-3 h2">
+              <i class="fas fa-cloud-sun"></i> Travel Weather Dashboard
+            </h1>
+            ​
+          </div>
+          <!--Grid column-->
+          ​
+        </div>
+        <!--Grid row-->
+        ​
+      </div>
+      ​
+    </header>
+    ​ ​
+    <div class="table-bordered p-2 m-4">
+      <form class="text-center" action="#!">
+        <!-- Grid row -->
+        <div class="form-row">
+          <!-- Grid column -->
+          <div class="col-md-3">
+            <!-- Material input -->
+            <div class="md-form form-group">
+              <input
+                type="search"
+                class="form-control"
+                id="cityName"
+                placeholder="Enter city"
+              />
+              <label for="Search">Search for a City</label>
+            </div>
+          </div>
+        </div>
+        ​
+        <!--  -->
+        ​
+        <button id="searchBtn" class="btn btn-default submit">
+          <i class="fas fa-search text-white" aria-hidden="true"></i> Search
+        </button>
+        <button class="btn btn-default clear">
+          <i class="far fa-trash-alt"></i> Clear Results
+        </button>
+        ​
+      </form>
+    </div>
+    ​
+    <section class="table-bordered p-2 m-4"><!--id="forecast"-->
+      <h5 class="card-header green rounded white-text text-left py-4 m-2">
+        <strong><i class="fas fa-sun"></i> 5 - Day Forecast</strong>
+      </h5>
+      <div id="forecast">
+        <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png"/> -->
+      </div>
+      <!-- the data in here will come dynamically from the JS -->
+    </section>
+    ​
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2 tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+  ​
+</html>

@@ -1,0 +1,7 @@
+#forecast {
+  width: 150px;
+  height: 200px;
+  border: 1px solid rgb(6, 220, 248);
+  background-color: blue;
+  color: rgb(14, 231, 14);
+}
